@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="weatherContainer">
+        <h2 class="js-weather weather"></h2>
+        <div class="clockContainer">
+            <div class="js-clockTitle clockTitle">
+                <h1 class="js-clock clock">00:00:00</h1>
+                <p class="js-clockGreeting clockGreeting"></p>
+            </div>
+            <div class="greetingContainer">
+                <form action="" class="js-greetingForm greetingForm">
+                    <input type="text" placeholder="What your name?">
+                </form>
+                <p class="js-nameGreeting nameGreeting"></p>
+                <button type="button" class="js-nameCg">NAME CHANGE</button>
+            </div>
+        </div>
+        <div class="monthContainer">
+            <p>30일 날씨 지정 공간</p>
+        </div>
+    </section>
+    <section class="toDoContainer">
+        <div class="everydayToDo">
+            <p>매일 할일 칸</p>
+        </div>
+        <div class="dailyToDo">
+            <div class="toDoForm">
+                <form action="" class="js-toDoForm">
+                    <input type="text" placeholder="What to do?">
+                </form>
+                <button type="submit" class="js-toDoReset">TO DO RESET</button>
+            </div>
+            <ul class="js-toDoList toDoList"></ul>
+        </div>
+    </section>
+    <script src="bg.js"></script>
+    <script src="clock.js"></script>
+    <script src="weather.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
