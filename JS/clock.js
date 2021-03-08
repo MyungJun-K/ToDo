@@ -4,11 +4,11 @@ const clockTitle = document.querySelector(".js-clockTitle"),
 
 function timeGreeting() {
     const hours = getTime();
-    if(hours < 12 && hours > 6) {
+    if(hours <= 12 && hours > 6) {
         clockGreeting.innerText = `Good Morning`;
     }else if(12 < hours && hours < 18) {
         clockGreeting.innerText = `Good Afternoon`;
-    }else if(18 < hours && hours <=23) {
+    }else if(18 <= hours && hours <=23) {
         clockGreeting.innerText = `Good Evening`;
     }else {
         clockGreeting.innerText = `Good Night`;

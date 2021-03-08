@@ -3,12 +3,9 @@ const greetingForm = document.querySelector(".js-greetingForm"),
     nameGreeting = document.querySelector(".js-nameGreeting"),
     nameCg = document.querySelector(".js-nameCg");
 
-const USER_LS = "crrentUser";
+const USER_LS = "currentUser";
 const SHOW_CN = "showing";
 
-function saveName(text) {
-    localStorage.setItem(USER_LS, text);
-}
 
 function paintName(text) {
     greetingForm.classList.remove(SHOW_CN);
@@ -24,9 +21,13 @@ function handleSubmitName(event) {
     paintName(user);
 }
 
+function saveName(user) {
+    localStorage.setItem(USER_LS, user);
+}
+
 function askForName() {
     greetingForm.classList.add(SHOW_CN);
-    greetingForm.addEventListener("submit", handleSubmitName)
+    greetingForm.addEventListener("submit", handleSubmitName);
 }
 
 function loadGreeting() {
@@ -44,9 +45,13 @@ function handleNameChange() {
     loadGreeting();
 }
 
+function nameChange() {
+    nameCg.addEventListener('click', handleNameChange)
+}
+
 function init() {
     loadGreeting();
-    nameCg.addEventListener('click', handleNameChange)
+    nameChange();
 }
 
 init();

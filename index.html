@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="every.css">
 </head>
 <body>
     <section class="weatherContainer">
@@ -17,7 +18,7 @@
             </div>
             <div class="greetingContainer">
                 <form action="" class="js-greetingForm greetingForm">
-                    <input type="text" placeholder="What your name?">
+                    <input type="text" placeholder="What your name?">                    
                 </form>
                 <p class="js-nameGreeting nameGreeting"></p>
                 <button type="button" class="js-nameCg">NAME CHANGE</button>
@@ -25,26 +26,41 @@
         </div>
         <div class="monthContainer">
             <p>30일 날씨 지정 공간</p>
+            <p>다른걸 할까</p>
         </div>
     </section>
     <section class="toDoContainer">
-        <div class="everydayToDo">
-            <p>매일 할일 칸</p>
+        <div class="js-everydayToDo everydayToDo">
+            <form action="" class="js-everydayForm everydayForm">
+                <input type="text" placeholder="What to do, everyday">
+                <button type="submit" class="js-everydayReset">RESET</button>
+            </form>
+            <ul class="everyday__ul">
+                <li>할일</li>
+                <li>월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li>토</li>
+                <li>일</li>
+            </ul>
         </div>
         <div class="dailyToDo">
             <div class="toDoForm">
                 <form action="" class="js-toDoForm">
                     <input type="text" placeholder="What to do?">
                 </form>
-                <button type="submit" class="js-toDoReset">TO DO RESET</button>
+                <button type="button" class="js-toDoReset">TO DO RESET</button>
             </div>
             <ul class="js-toDoList toDoList"></ul>
         </div>
     </section>
-    <script src="bg.js"></script>
-    <script src="clock.js"></script>
-    <script src="weather.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
+    <script src="JS/bg.js"></script>
+    <script src="JS/greeting.js"></script>
+    <script src="JS/clock.js"></script>
+    <script src="JS/weather.js"></script>
+    <script src="JS/todo.js"></script>
+    <script src="JS/everyday.js"></script>
 </body>
 </html>

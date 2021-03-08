@@ -3,7 +3,7 @@ const toDoForm = document.querySelector(".js-toDoForm"),
     toDoList = document.querySelector(".js-toDoList"),
     toDoReset = document.querySelector(".js-toDoReset");
 
-const TODOS = "todos"
+const TODOS = "todos";
 let todos = [];
 
 function handleDelBtn(event) {
@@ -14,7 +14,7 @@ function handleDelBtn(event) {
         return todo.id !== parseInt(li.id)
     });
     todos = cleanToDo;
-    saveName();
+    saveToDo();
 }
 
 function handleCheck(event) {
@@ -49,10 +49,10 @@ function paintToDo(text) {
         text : text 
     };
     todos.push(toDoObj);
-    saveName()
+    saveToDo();
 }
 
-function saveName() {
+function saveToDo() {
     localStorage.setItem(TODOS,JSON.stringify(todos));
 }
 
