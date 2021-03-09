@@ -1,0 +1,58 @@
+.greetingForm,
+.nameGreeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+.bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.completeBtn {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 8px;
+  width: 30px;
+  font-size: 17px;
+  margin-right: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.completeBtn:hover {
+  background-color: rgb(34, 0, 255, 0.4);
+  color: white;
+}
+
+.deleteBtn {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 8px;
+  font-size: 17px;
+  transition: all 0.2s ease-in-out;
+}
+
+.deleteBtn:hover {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.returnBtn {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  color: black;
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+  font-size: 16.5px;
+  width: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.returnBtn:hover {
+  background-color: rgb(64, 255, 0, 0.5);
+  color: white;
+}

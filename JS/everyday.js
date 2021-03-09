@@ -6,6 +6,10 @@ const everyForm = document.querySelector(".js-everydayForm"),
 const EVERY = "every";
 let everys = [];
 
+function handleinput1(event){
+    console.log(event.target.checked);
+}
+
 function paintEvery(text) {
     const newId = everys.length + 1; 
     const ul = document.createElement("ul");
@@ -33,6 +37,8 @@ function paintEvery(text) {
     input5.type = "checkbox";
     input6.type = "checkbox";
     input7.type = "checkbox";
+    input1.addEventListener("click", handleinput1);
+   
     everydayToDo.appendChild(ul);
     ul.appendChild(li);
     li.appendChild(span);
@@ -52,6 +58,7 @@ function paintEvery(text) {
     li7.appendChild(input7);
     ul.id = newId;
     span.classList.add("todoMargin");
+    
     const everyObj = {
         id : newId,
         text : text,
@@ -92,7 +99,6 @@ function loadEvery() {
 
 function handleEveryReset() {
     localStorage.removeItem(EVERY);
-   
 }
 
 function everyReset(){

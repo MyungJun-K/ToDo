@@ -1,0 +1,64 @@
+.toDoContainer {
+  position: relative;
+  top: -10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 82%;
+  height: 52%;
+  border-radius: 0 0 30px 30px;
+}
+
+.toDoFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toDoForm input {
+  width: 370px;
+  height: 40px;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.toDoForm__btn {
+  width: 370px;
+  height: 40px;
+  font-size: 25px;
+}
+
+.toDoList {
+  color: white;
+  margin: 30px 0 0 10px;
+}
+
+.toDoList li {
+  margin-bottom: 5px;
+}
+
+.completeList li {
+  margin-bottom: 5px;
+}
+
+.completeList {
+  color: white;
+  margin: 30px 0 0 10px;
+}
+
+.toDoComplete {
+  text-decoration: line-through 5px;
+}
+
+.todoContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pending__title {
+  color: white;
+  font-size: 40px;
+}
+
+.complete__title {
+  color: white;
+  font-size: 40px;
+}

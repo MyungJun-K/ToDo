@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="every.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <section class="weatherContainer">
@@ -21,39 +20,31 @@
                     <input type="text" placeholder="What your name?">                    
                 </form>
                 <p class="js-nameGreeting nameGreeting"></p>
-                <button type="button" class="js-nameCg">NAME CHANGE</button>
+                <button type="button" class="js-nameCg greetingForm__btn">NAME CHANGE</button>
             </div>
-        </div>
-        <div class="monthContainer">
-            <p>30일 날씨 지정 공간</p>
-            <p>다른걸 할까</p>
         </div>
     </section>
+    <section class="calenderContainer">
+        <div class="clalendar"></div>
+    </section>
     <section class="toDoContainer">
-        <div class="js-everydayToDo everydayToDo">
-            <form action="" class="js-everydayForm everydayForm">
-                <input type="text" placeholder="What to do, everyday">
-                <button type="submit" class="js-everydayReset">RESET</button>
-            </form>
-            <ul class="everyday__ul">
-                <li>할일</li>
-                <li>월</li>
-                <li>화</li>
-                <li>수</li>
-                <li>목</li>
-                <li>금</li>
-                <li>토</li>
-                <li>일</li>
-            </ul>
-        </div>
         <div class="dailyToDo">
-            <div class="toDoForm">
-                <form action="" class="js-toDoForm">
+            <div class="toDoFormContainer">
+                <form action="" class="js-toDoForm toDoForm">
                     <input type="text" placeholder="What to do?">
                 </form>
-                <button type="button" class="js-toDoReset">TO DO RESET</button>
+                <button type="button" class="js-toDoReset toDoForm__btn">TO DO RESET</button>
             </div>
-            <ul class="js-toDoList toDoList"></ul>
+            <div class="todoContainer">
+                <div class="pending">
+                    <p class="pending__title">Pending</p>
+                    <ul class="js-toDoList toDoList"></ul>
+                </div>
+                <div class="complete">
+                    <p class="complete__title">Complete</p>
+                    <ul class="js-completeList completeList"></ul>
+                </div>
+            </div>
         </div>
     </section>
     <script src="JS/bg.js"></script>
@@ -61,6 +52,6 @@
     <script src="JS/clock.js"></script>
     <script src="JS/weather.js"></script>
     <script src="JS/todo.js"></script>
-    <script src="JS/everyday.js"></script>
+    <script src="JS/calendar.js"></script>
 </body>
 </html>
