@@ -37,7 +37,6 @@ function handleComBtn(event){
    const currentId = comToDos[0].id;
    paintToDoCom(currentValue,currentId);
    todos = cleanToDo;
-   saveToDoCom();
    saveToDo();
 }
 
@@ -168,7 +167,6 @@ function init(){
     loadToDo();
     toDoForm.addEventListener("submit",handleSubmitTo);
     toDoReset.addEventListener("click", handleReset);
-  
 }
 
 init();

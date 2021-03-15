@@ -28,7 +28,7 @@
 
 .toDoList {
   color: white;
-  margin: 30px 0 0 10px;
+  margin-top: 30px;
 }
 
 .toDoList li {
@@ -41,7 +41,7 @@
 
 .completeList {
   color: white;
-  margin: 30px 0 0 10px;
+  margin-top: 30px;
 }
 
 .toDoComplete {
@@ -61,4 +61,42 @@
 .complete__title {
   color: white;
   font-size: 40px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .toDoContainer {
+    height: 72%;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .toDoContainer {
+    height: 62%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .toDoForm input,
+  .toDoForm__btn{
+    width: 250px;
+  }
+
+  .toDoForm input::placeholder {
+    font-size: 25px;
+  }
+
+  .toDoForm__btn {
+    font-size: 20px;
+  }
+
+  .pending__title,
+  .complete__title {
+    font-size: 25px;
+  }
+
+  .toDoList,
+  .completeList{
+    margin-top: 10px;
+  }
+
 }
